@@ -51,6 +51,9 @@ ifndef $(QUICK_MINI_TARGET)
                         ../lua_extensions/lpack/lpack.c \
                         ../lua_extensions/lsqlite3/sqlite3.c \
                         ../lua_extensions/lsqlite3/lsqlite3.c \
+                        ../lua_extensions/lamf3/amf3.c \
+                        ../lua_extensions/lamf3/amf3_encode.c \
+                        ../lua_extensions/lamf3/amf3_decode.c \
                         ../lua_extensions/lua_extensions.c
 
 else
@@ -71,7 +74,8 @@ LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/../luajit/include \
                            $(LOCAL_PATH)/../cocos2d-x/scripting/lua/lua_extensions/socket \
                            $(LOCAL_PATH)/../cocos2d-x/scripting/lua/lua_extensions/filesystem \
                            $(LOCAL_PATH)/../cocos2d-x/scripting/lua/lua_extensions/lpack \
-                           $(LOCAL_PATH)/../cocos2d-x/scripting/lua/lua_extensions/lsqlite3
+                           $(LOCAL_PATH)/../cocos2d-x/scripting/lua/lua_extensions/lsqlite3 \
+                           $(LOCAL_PATH)/../cocos2d-x/scripting/lua/lua_extensions/lamf3
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/ \
                     $(LOCAL_PATH)/../luajit/include \
@@ -85,6 +89,7 @@ LOCAL_C_INCLUDES := $(LOCAL_PATH)/ \
                     $(LOCAL_PATH)/../cocos2d-x/scripting/lua/lua_extensions/filesystem \
                     $(LOCAL_PATH)/../cocos2d-x/scripting/lua/lua_extensions/lpack \
                     $(LOCAL_PATH)/../cocos2d-x/scripting/lua/lua_extensions/lsqlite3 \
+                    $(LOCAL_PATH)/../cocos2d-x/scripting/lua/lua_extensions/lamf3 \
                     $(LOCAL_PATH)/../../../cocos2dx \
                     $(LOCAL_PATH)/../../../cocos2dx/include \
                     $(LOCAL_PATH)/../../../cocos2dx/platform \
